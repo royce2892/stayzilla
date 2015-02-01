@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/hotel_image"
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/no" />
+
+    <TextView
+        android:id="@+id/rooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hotel_image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="left|center_vertical"
+        android:text="Rooms"
+        android:textColor="@color/blue"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/amen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rooms"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="left|center_vertical"
+        android:text="Amenities"
+        android:textColor="@color/blue"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/amen"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="left|center_vertical"
+        android:text="Proximity"
+        android:textColor="@color/blue"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/shield"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/rooms"
+        android:layout_alignBottom="@+id/dist"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/yellow"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+</RelativeLayout>
