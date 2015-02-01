@@ -151,15 +151,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(
 				MainActivity.this, android.R.layout.simple_list_item_1, name);
 		atvPlaces.setAdapter(adapter);
-		atvPlaces.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-				imm.hideSoftInputFromWindow(atvPlaces.getWindowToken(), 0);
-			}
-		});
+	
 	}
 
 	@Override
